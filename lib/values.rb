@@ -13,5 +13,5 @@ def get_the_values(groceries)
   groceries.each do |type, item|
     item.each {|name| all_groceries << name}
   end
-    
+  all_groceries
 end
