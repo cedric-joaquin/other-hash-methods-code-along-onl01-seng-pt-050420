@@ -9,6 +9,9 @@ require 'pry'
 # }
 
 def get_the_min(groceries)
-  groceries.map do |grocery_type, item|
-    
+ groceries_by_type = groceries.map do |grocery_type, item|
+    item.min
+  end
+  
+  groceries_by_type.min
 end
